@@ -1,0 +1,59 @@
+Ens han contractat per desenvolupar un servei de compartició d'arxius al núvol anomenat Uy!Transfer. El funcionament de l'aplicació és molt simple, l'usuari tria l'arxiu que vol compartir, el puja i, automàticament, rep un link amb el que tothom pot descarregar l'arxiu.
+
+L'arxiu adjunt número 1 és un wireframe on es mostra el funcionament de l'aplicació i la interacció entre les diferents vistes que s'hi mostren. Analitza aquest wireframe i el funcionament de l'aplicació; després, realitza els exercicis que es descriuen a continuació.
+
+
+
+IMPORTANT: el desenvolupament d'aquest projecte ha de quedar integrat a GitHub, pujant els canvis en el codi a mida que s'avança en el desenvolupament (feu commits de manera regular, quan afegiu noves funcionalitats, etc.). A l'hora de valorar l'activitat, s'analitzà l'evolució registrada. Recordeu que la versió definitiva de l'activitat ha de quedar a la branca principal master.
+
+
+
+1. Al repositori que vareu crear per les activitats de l'assignatura, crea una nova branca amb el nom UF2_AC1 i entra en ella (git checkout -b UF2_AC1). 
+
+
+
+2. Crea al teu servidor (i en aquesta nova branca UF2_AC1) un directori anomenat uytransfer. En aquest directori s'emmagatzemarà tota l'estructura de directoris del projecte.
+
+A l'interior d'aquest directori, crea un arxiu que s'anomeni index.php que tingui l'estructura d'un document HTML. En aquesta pàgina web es mostrarà el formulari de pujada d'arxius.
+
+Fes el disseny d'aquesta vista de l'aplicació basant-te en les indicacions del wireframe. A l'hora de configurar el formulari, indica que les dades s'enviaran cap a l'arxiu upload.php mitjançant el mètode post. Recorda que aquest formulari està enviant un arxiu i hauràs de definir l'atribut enctype com correspongui.
+
+
+
+3. Com podràs observar al wireframe, la part superior de totes les vistes és idèntica. Aleshores, exporta aquesta part del document index.php a una altre arxiu al que anomenarem header.php. D'aquesta manera, podrem aprofitar aquest mateix arxiu per carregar la part superior a totes les vistes de l'aplicació.
+
+Òbviament, ara haurem d'importar l'arxiu header.php a l'inici d'index.php amb l'objectiu d'aconseguir montar la mateixa estructura que teniem abans. Fes-ho i comprova que la web es carrega correctament al navegador.
+
+
+
+4. Afegeix al projecte un altre arxiu, anomenat upload.php, que també tindrà estructura de document HTML. Aquest arxiu serà l'encarregat de rebre les del formulari creat a l'exercici 2.
+
+Fes el disseny d'aquesta vista de l'aplicació basant-te en les indicacions del wireframe. La part superior d'aquesta vista, també s'ha de crear important l'arxiu header.php. La imatge que s'hi mostra tindrà dues versions: una que indiqui que la pujada de l'arxiu ha estat satisfactoria i l'altra que indiqui justament el contrari (de moment, fes que es mostri la imatge de pujada satisfactoria).
+
+De moment, l'objectiu d'upload.php serà emmagatzemar l'arxiu pujat per l'usuari al directori files (directori que hauràs de crear prèviament a l'interior del directori del projecte). El nom de l'arxiu estarà format per una seqüència de valors numèrics: any actual + mes actual + dia actual + número aleatori de 5 dígits (per exemple, 2021031112345). L'extensió de l'arxiu serà la mateixa que tenia en el moment de pujar-lo.
+
+A part d'emmagatzemar l'arxiu, es mostrarà un missatge personalitzat amb el nom de l'usuari, com per exemple, Hola Manolo, usa éste link para compartir tu archivo (suposant que el nom d'usuari indicat és Manolo). Si l'usuari no ha indicat cap nom, el missatge serà Oye tu!! Usa éste link para compartir tu archivo.
+
+
+
+5. Aconsegueix que, únicament, es permetin pujar arxius que tinguin una mida màxima de 10 MB amb extensió PDF, PNG, JPG, RAR o ZIP.
+
+Si l'usuari intenta pujar un arxiu que no compleixi aquestes característiques, es mostrarà un missatge d'error informant concretament de quin és l'error (supera la mida màxima o format no vàlid). En aquest cas, la imatge que s'haurà de mostrar ha d'indicar que la pujada no ha estat satisfactoria.
+
+
+
+6, Modifica l'arxiu upload.php perquè sigui capaç d'enviar, al correu electrònic introduït, l'URL del link de descarrega juntament amb el cos del missatge indicat. Això únicament passarà si l'usuari, al formulari d'index.php, indica que desitja enviar un mail.
+
+Abans d'enviar el correu electrònic es verificarà que l'email introduït tingui format d'email, és a dir, que contingui el caràcter @. Si no és així, es redireccionarà a l'usuari a index.php informant de l'error. Aquest error serà enviat com a paràmetre d'una petició get (per exemple, index.php?error_mail=1). Al mostrar novament el formulari de pujada (index.php) l'usuari ha de visualitzar algun missatge d'error que informi que l'email indicat no és vàlid.
+
+Si l'usuari deixa en blanc el cos del missatge, a l'hora d'enviar el correu electrònic farem servir un missatge genèric. Aquest missatge genèric serà: Sorpresa!! Alguien ha compartido contigo un archivo.
+
+IMPORTANT: per comprovar el funcionament d'aquest punt, hauràs de configurar el XAMPP per tal de que es puguin enviar correus electrònics desde localhost. Per aconseguir-ho, segueix les indicacions d'aquest post (no utilitzis un compte de correu personal, utilitza el compte uytransfer@gmail.com, amb la contrasenya uytransferAdmin).
+
+
+
+7. Aconsegueix que, cada cop que es pugi un nou arxiu, l'URL de descarga quedi emmagatzemada en una cookie. Aquestes cookies només han d'estar disponibles durant una setmana.
+
+Gràcies a aquestes cookies podrem programar la utilitat de la vista Mis últimos archivos. Com el seu propi nom indica, en aquesta part de l'aplicació l'usuari podrà veure tots els links de descàrrega generats últimament (durant l'ultima setmana, concretament). Com ja t'hauràs fet a la idea, els links els obtindrem a través de les cookies emmagatzemades al navegador.
+
+Al fer el disseny de la vista que mostra els últims arxius, recorda basar-te en el wireframe i recorda, també, que disposem de l'arxiu header.php.

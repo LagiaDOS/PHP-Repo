@@ -1,0 +1,219 @@
+1. Crea un nou arxiu que tingui l'estructura d'un document HTML però s'anomeni index.php. Inclou a l'interior del body una sentència de PHP que s’encarregui de mostrar el missatge Estic utilitzant el llenguatge de programació PHP.
+
+Comprova els resultats obtinguts al obrir l'arxiu directament i al obrir-lo a través del servidor.
+
+
+
+2. Modifica el missatge definit a l’exercici anterior per tal d’aconseguir que el text llenguatge de programació es mostri en cursiva i el text PHP es mostri en cursiva i en negreta.
+
+
+
+3. Modifica el missatge definit a l'exercici 1 per tal d'aconseguir que es mostri en un element h3, amb una separació de paraules de 20 píxels i de color verd.
+
+
+
+4.Crea una variable i assigna-li el teu nom. Un com creada, inclou la variable al missatge definit a l’exercici 1 per tal d’aconseguir que sigui de l’estil Jo Rubén, estic utilitzant el llenguatge de programació PHP.
+
+
+
+5. Assigna a tres variables l’URL de tres llocs web i generà, fent ús d’aquestes variables, 3 enllaços a les corresponents URLs.
+
+
+
+6. Inclou un  script de PHP a l’interior d’una web que, utilitzant una única variable que canvia de valor i de tipus (cadena de text, enter, doble i booleà), mostri el valor i el tipus al que pertany la variable a cada canvi.
+
+La informació que es mostri ha de quedar distribuïda en una llista no ordenada.
+
+IMPORTANT: hauràs de buscar una funció de PHP que retorni el tipus d'una variable.
+
+
+
+7. Assigna el text 45.67 a dos variables de tipus cadena de text. Un cop assignat el valor a les variables, converteix una d’elles a enter i l’altra a decimal (doble).
+
+Per tal de comprovar que la conversió ha estat satisfactòria, mostra el tipus i el valor de les variables.
+
+
+
+8. Defineix 2 variables constants, COLOR_1 i COLOR_2, assignant com a valor dos colors.
+
+Mostra el valor de les variables constants i verifica que no es poden modificar.
+
+
+
+9. Fent ús de les constants creades a l’exercici anterior, afegeix dos div a la nostra web. Un dels div tindrà com a color de fons COLOR_1 i l’altre COLOR_2.
+
+
+
+10. Fes que es mostri un missatge amb una mida generada aleatòriament entre 10 i 100 píxels.
+
+IMPORTANT: hauràs de buscar una funció de PHP que generi valors aleatoris.
+
+
+
+11. Fes que es generi un valor aleatori entre 1 i 6 i, amb el valor obtingut, es mostri la imatge del dau que correspongui. D’aquesta manera simularem en llançament d’un dau.
+
+Les imatges dels daus l’has trobaràs a l’arxiu adjunt número 1.
+
+
+
+12. Simula ara el llançament de dos daus mostrant, a part de les imatges dels daus, la suma del punts obtinguts.
+
+
+
+13. Mostra la taula de multiplicar (de 0 a 10) d’un número generat aleatòriament. Dóna format a la taula, mostrant cada fila d’un color amb ajuda de les constants definides a l'exercici 8.
+
+
+
+14. Fes una funció que s’encarregui de mostrar el mateix missatge que es mostrava a l’exercici 3.
+
+Fes ús d’aquesta funció, tot verificant el seu funcionament.
+
+
+
+15. Exporta aquesta funció a un nou arxiu de PHP al que anomenarem funciones.php i situarem al directori librerias (aquest directori estarà a l’interior del directori de la nostra aplicació).
+
+Aconsegueix importar a l’arxiu index.php el contingut de l’arxiu funciones.php i verifica que podem fer ús de la funció que hem exportat sense cap tipus de problema.
+
+
+
+16. Importa a l’arxiu index.php un arxiu inexistent (per exemple, no_existo.php) i comprova les diferencies que hi ha entre include i require.
+
+
+
+17. Modifica la funció creada a l’exercici 14 per tal d’aconseguir que el text que mostra el missatge es rebi per paràmetres.
+
+
+
+18. Torna a modificar la funció de l’exercici 14, en aquest cas per assignar al paràmetre un valor per defecte. D’aquesta manera, si fem la crida a la funció sense indicar cap text veurem el missatge Hola mundo!.
+
+
+
+19. Crea una funció que calculi la hipotenusa d’un triangle rectangle. Aquesta funció rebrà com a paràmetres les longitud dels dos catets.
+
+IMPORTANT: hauràs de buscar una funció de PHP que calculi arrels quadrades.
+
+
+
+20. Crea una funció que rebi el sou brut d'un treballador i retorni els detalls de la seva nòmina.
+
+Suposarem que la retenció en concepte de seguretat social és del 5,5% del sou brut i que la retenció en concepte d’IRPF variarà en funció del sou brut:
+
+Si el sou brut és superior a 2500 Euros l'IRPF que s'aplicarà serà del 19%
+Si no és el cas però el sou brut si que és superior a 1800 Euros l'IRPF que s'aplicarà serà del 17%
+Si no és el cas però el sou brut si que és superior a 1400 Euros l'IRPF que s'aplicarà serà del 15%
+En qualsevol altre cas l'IRPF que s'aplicarà serà del 13%
+Els detalls de la nòmina s’han de retornar en una taula HTML. Afegeix estils a la taula per tal de que sigui el més atractiva possible
+
+
+
+21. Crea una funció que retorni la taula de multiplicar (de 0 a 10) d'un número que es rebrà per paràmetres.
+
+La taula ha de tenir el mateix aspecte que la generada a l'exercici 13.
+
+IMPORTANT: per resoldre aquest exercici has d'utilitzar una estructura de control iterativa.
+
+
+
+22. Crea un array amb l'edat de 5 persones (familiars, companys de classe, etc.).
+
+
+
+23. Afegeix a l'array de l'exercici anterior dues edats més, una al principi de l'array i l'altre al final.
+
+IMPORTANT: hauràs d'utilitzar dos funcions de PHP, una que permeti afegir valors al principi d'un array i l'altre que permeti afegir-los al final.
+
+
+
+24. Elimina alguna de les edads de l'array creat a l'exercici 22.
+
+IMPORTANT: per eliminar un element de l'array utilitza alguna funció de PHP.
+
+
+
+25. Crea una funció que rebi per paràmetres un array amb edats de persones (com per exemple, el que hem creat a l'exercici 22) i s'encarregui d'oferir un estudi estadístic d'aquestes dades. Concretament s'ha d'informar de la mitjana de les edats, l'edat més petita i l'edat més gran.
+
+
+
+26. Crea un array associatiu que contingui el nom i el preu de 5 productes (mòbils, cotxes, etc.).
+
+
+
+27. Crea una funció que rebi per paràmetres un array associatiu (com per exemple, el que hem creat a l'exercici anterior) i mostri en una taula HTML el nom de les claus i el corresponent valor.
+
+
+
+28. Modifica la funció creada a l'exercici anterior per tal de que pugui rebre un segon paràmetre, que serà opcional.
+
+Aquest paràmetre serà una cadena de text que indicarà com s'ha d'ordenar l'array abans de mostrar el seu contingut. Concretament els valors que rebrà són :
+
+N: l'array no s'ha d'ordenar (aquest serà el valor que per defecte s'assignarà al paràmetre)
+V: l'array s'ha d'ordenar pels valors que emmagatzema
+P: l'array s'ha d'ordenar en funció del text associat a cadascuna de les posicions
+IMPORTANT: per ordenar l'array hauràs d'utilitzar dues funcions de PHP.
+
+
+
+29. Crea un arxiu HTML que contingui un formulari. Afegeix en aquest formulari una caixa de text, una caixa de contrasenyes, una caixa oculta, un àrea de text, una llista desplegable, una llista de selecció múltiple, tres botons d'opció (associats entre ells), un selector de dates, un selector de números, un selector de colors i una caixa de validació.
+
+Dóna un nom a cadascun dels elements i fes que s'enviïn els seus valors, clicant sobre un botó, cap a l'arxiu form.php.
+
+Aquest arxiu form.php, que tindrà estructura de document HTML, s'encarregarà de rebre les dades que s'envien des del formuli i de mostrar-les.
+
+L'arxiu form.php haurà d'estar preparat per rebre les dades mitjançant el mètode GET o el mètode POST. A la part superior de la pàgina s'ha d'informar de quin mètode és el que s'està utilitzant.
+
+Prova el funcionament de form.php, modificant el mètode d'enviament en el formulari.
+
+IMPORTANT: abans de treballar amb els valors que provenen de caixes de text (o similars) és convenient eliminar els espais en blanc innecessaris (del principi o del final). Busca una funció de PHP que s'encarregui d'aquesta acció i utilitza-la abans de mostra les dades.
+
+
+
+30. Integra els dos arxius creats a l'exercici anterior en un de sòl (concretament a form.php). L'objectiu serà enviar les dades del formulari cap a el propi arxiu, mostrant segons correspongui el formulari o les dades rebudes.
+
+
+
+31. Crea un petit examen de PHP que estarà format per 5 preguntes. Seria interessant que el tipus de pregunta fos divers (cert o fals, tipus test, completa la frase, etc.).
+
+Fes que les respostes de l'examen s'enviïn, mitjançant el mètode POST, amb l'objectiu de mostrar la nota obtinguda per l'alumne/a. A part de la nota, s'haurà de mostrar un resum indicant si ha encertat, o no, cadascuna de les preguntes.
+
+Decideix tu mateix si treballaràs sobre un mateix arxiu de PHP o, bé, prefereixes crear l'examen en un document HTML i rebre les respostes en un arxiu PHP.
+
+
+
+32. Crea un document HTML on es mostri una llista amb 4 enllaços. Tots els enllaços obriran l'arxiu detall.php, on suposarem que es mostra el detall d'un producte.
+
+L'objectiu és aconseguir passar amb la ruta de l'enllaç, simulant el mètode GET, dos paràmetres: prod (on s'indicarà el nom del producte) i cat (on s'indicarà el nom de la categoria a la que pertany el producte).
+
+Per últim, afegeix un títol a detall.php on es mostri tan el nom del producte com el de la categoria rebuts per paràmetres. Fes, també, que l'enllaç seleccionat es mostri amb un color de fons que el diferenciï de la resta.
+
+
+
+33. Investiga quin tipus d'informació emmagatzema l'array global $_SERVER.  Després, crea un arxiu de PHP al que anomenaràs server_info.php, on es mostrarà el nom de la pàgina actual, el nom del lloc web al que estem accedint, l'IP del servidor i el tipus de navegador des del que ens estem connectant. 
+
+
+
+34. Crea un nou arxiu de PHP (anomenat singup.php) on es mostrarà un petit formulari de registre d'usuaris. Concretament es demanarà l'email de l'usuari, la contrasenya, el nom i els cognoms.
+
+Aquest formulari enviarà les dades al mateix arxiu (singup.php), a través del mètode POST, per tal de que siguin validades. Les dades seran vàlides si l'email conté una @, la contrasenya té una longitud mínima de 8 caràcters i el nom ha estat introduït.
+
+Es cas de que algunes de les dades introduïdes no siguin vàlides, s'haurà de mostrar un text de color vermell al costat de l'element informant de l'error. És important, però, que el formulari mantingui totes les dades introduïdes.
+
+Si totes les dades són correctes, en lloc del formulari, es mostrarà un avís informant que les dades han estat enviades correctament i que s'ha enviat un mail de confirmació per tal de finalitzar el procés de registre.
+
+
+
+35. Crea un arxiu HTML que contingui un formulari on es mostri una caixa de selecció d'arxius. Configura correctament el formulari per tal de que puguin enviar-se arxius.
+
+Les dades del formulari s'enviaran cap a file.php. Aquest arxiu, que tindrà estructura de document HTML, s'encarregarà de rebre l'arxiu que envia el formulari i de mostrar algunes de les seves dades (nom, nom temporal, mida i tipus).
+
+Crea un directori, que s'anomeni files, al directori principal de l'aplicació i aconsegueix que l'arxiu pujat quedi emmagatzemat a l'interior d'aquest directori.
+
+Finalment, fes que es mostri l'URL de descarrega de l'arxiu pujat.
+
+IMPORTANT: fes un cop d'ull a la funció de PHP move_uploaded_file, et pot ajudar a resoldre l'exercici.
+
+
+
+
+36. Afegeix al formulari creat a l'exercici 34 una caixa de validació que permeti als usuaris recordar l'email introduït. Si l'usuari indica que vol recordar l'email, aquest quedarà emmagatzemat en una cookies anomenada email.
+
+Aconsegueix que, al accedir a l'arxiu singup.php, es comprovi l'existència d'aquesta cookie. En cas d'existir, es mostrarà automàticament a la caixa de text l'email de l'usuari.
